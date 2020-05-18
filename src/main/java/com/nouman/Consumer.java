@@ -34,7 +34,7 @@ public class Consumer {
             if (records.count() == 0) {
                 timeouts++;
             } else {
-                System.out.printf("Got %d records after %d timeouts\n", records.count(), timeouts);
+                System.out.printf("Got records after %d timeouts\n", records.count(), timeouts);
             }
 
             for (ConsumerRecord record: records) {
